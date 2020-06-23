@@ -35,9 +35,15 @@ class UsersTestCase(TestCase):
         self.assertListEqual(keys_view, keys_fields, 'Check fields keys in detail view')
 
     def test_filter(self):
+        """
+        Check url parameter as filter by year
+        """
         resp = self.client.get('http://testserver/users/?year=1976')
         self.assertEquals(len(resp.json()), 2, "Number of users born in 1976: 2")
 
     def test_users_model(self):
+        """
+        Check
+        """
         user = Users()
         self.assertTrue(hasattr(user, 'birthday'), "Birthday field exists")
