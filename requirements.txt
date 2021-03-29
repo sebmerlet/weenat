@@ -19,7 +19,7 @@ pkg-resources==0.0.0
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 pudb==2019.2
-Pygments==2.6.1
+Pygments==2.7.4
 pytz==2020.1
 requests==2.24.0
 six==1.15.0
